@@ -19,7 +19,7 @@ function RegisterForm() {
   const onSubmitRegister = async (event) => {
     event.preventDefault();
     const userDetails = { username, password };
-    const url = '/api/register';
+    const url = 'http://localhost:4000/api/register';
     const options = {
       method: 'POST',
       headers: {

@@ -17,7 +17,7 @@ function TodosForm({ onAdd }) {
 
     try {
       console.log('Submitting:', { description: text, status });
-      const response = await fetch('/api/todos', {
+      const response = await fetch('http://localhost:4000/api/todos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

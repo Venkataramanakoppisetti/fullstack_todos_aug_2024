@@ -19,7 +19,7 @@ function TodosList() {
       }
 
       try {
-        const response = await fetch('/api/todos', {
+        const response = await fetch('http://localhost:4000/api/todos', {
           headers: {
             'Authorization': `Bearer ${jwtToken}`
           }
@@ -47,7 +47,7 @@ function TodosList() {
     }
 
     try {
-      const response = await fetch(`/api/todos/${id}`, {
+      const response = await fetch(`http://localhost:4000/api/todos/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${jwtToken}`
