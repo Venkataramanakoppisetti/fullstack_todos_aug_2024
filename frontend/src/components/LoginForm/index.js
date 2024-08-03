@@ -27,7 +27,7 @@ function LoginForm() {
   const onSubmitLogin = async (event) => {
     event.preventDefault();
     const userDetails = { username, password };
-    const url = 'http://localhost:4000/api/login';
+    const url = '/api/login';
     const options = {
       method: 'POST',
       headers: {
